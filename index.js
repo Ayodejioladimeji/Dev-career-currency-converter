@@ -6,8 +6,8 @@ const currenciesList = document.querySelector(".currencies");
 
 
 // THE EXCHANGE RATE API PASSING INTO A VARIABLE
-// const dataURL = "https://api.exchangeratesapi.io/latest";
-const dataURL = "https://data.fixer.io/api/latest?access_key=d4b01bf68d068fa93c2221b055105166&format=1";
+const dataURL = "https://api.exchangeratesapi.io/latest";
+// const dataURL = "https://data.fixer.io/api/latest?access_key=d4b01bf68d068fa93c2221b055105166&format=1";
 
 
 // THE SECTION DISPLAYING THE DEFAULT CURRENCY
