@@ -1,0 +1,1575 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#E5E5E5;
+}
+
+/* ========================== */
+/* THE SECTION OF THE CONTAINER */
+.container{
+    background: #ffffff;
+    width:30%;
+    height:620px;
+    margin:20px auto;
+}
+
+
+
+
+/* ================================ */
+/* THE SECTION OF THE SECTION */
+section{
+    background:#ffffff;
+    height:125px;
+}
+
+
+
+
+/* =============================== */
+/* THE SECTION OF THE HEADER */
+.header{
+    height:123px;
+    background:#02B78B;
+    border-bottom-right-radius:50px;
+    border-bottom-left-radius:50px;
+}
+
+/* ------------ */
+.header-toggle{
+    width:100%;
+    height:80px;
+}
+
+/* -------------- */
+.head{
+    width:90%;
+    float:left;
+    height:5px;
+}
+
+/* ---------------- */
+.head h2{
+    color:white;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 20px;
+    text-align:right;
+    letter-spacing:2px;
+    padding:30px 50px 20px 30px;
+    margin-right:20px;
+    font-weight:bold;
+}
+
+/* ----------------- */
+.toggle{
+    width:10%;
+    float:right;
+    height:50px;
+}
+
+/* ------------------- */
+.fa-toggle-off{
+    color:white;
+    font-size:22px;
+    float:left;
+    margin-top:33px;
+    font-weight:bold;
+}
+.fa-toggle-off::-barwebkit-meter-{
+    color:red;
+}
+
+/* --------------------- */
+/* --------------------- */
+.time-date{
+    height:30px;
+    width:100%;
+}
+
+/* --------------------- */
+.date{
+    width:40%;
+    float:left;
+    padding:3px;
+    color:#ffffff;
+    margin-left:15px;
+    font-family:Montserrat;
+    font-style:Regular;
+    font-size:12px;
+}
+
+/* ----------------------- */
+.time{
+    width:40%;
+    float:right;
+    padding:3px;
+    color:#ffffff;
+    text-align:right;
+    margin-right:15px;
+    font-family:Montserrat;
+    font-style:Regular;
+    font-size:12px;
+}
+
+
+/* ================================= */
+/* THE SECTION OF THE MAIN */
+main{
+    background:#ffffff;
+    height:410px;
+    width:100%;
+    padding:20px;
+    overflow:auto;
+}
+
+main::-webkit-scrollbar{
+    display:none;
+}
+
+
+
+/* ------------------------- */
+
+  ul.currencies li {
+    width:100%;
+    height:155px;
+    background: rgb(245, 244, 244);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.02);
+    border-radius:8px;
+    margin-bottom:15px;
+    position:relative;
+    list-style:none;
+  }
+
+/* ------------------------ */
+  ul.currencies li.base-currency {
+    background-color:#02b78b54;
+  }
+
+/* ------------------------------ */
+  .left{
+    height:155px;
+    width:30%;
+    float:left;
+    padding:20px;
+  }
+
+  .flag {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #fff;
+    margin-top:8px;
+
+  }
+
+  .info {
+    width: 70%;
+    float:right;
+    height:155px;
+    padding:10px;
+    position:relative;
+  }
+
+  .info .input span {
+    position:absolute;
+    top:39px;
+    left:-12px;
+    font-size:22px;
+    font-weight:bold;
+    color:#02B78B;
+  }
+
+  .info .input input {
+    font-size: 18px;
+    width: 100%;
+    background: rgb(236, 234, 234);
+    border-radius: 25px;
+    color:#02B78B;
+    padding: 12px;
+    margin-bottom: 0.75rem;
+    outline:none;
+    border:none;
+    margin-top:20px;
+  }
+  .input input::-webkit-input-placeholder{
+    color:#02B78B;
+    font-family:monospace;
+    font-size:20px;
+  }
+
+  .info .currency-name {
+    font-family:Montserrat;
+    font-style:normal;
+    font-weight:normal;
+    font-size:14px;
+    color: #828282;
+  }
+
+  .info .base-currency-rate {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #BDBDBD;
+    padding:7px 0;
+  }
+
+  .fa-times-circle{
+    font-weight: bold;
+    font-size: 15px;
+    color: #02B78B;
+    position:absolute;
+    right:9px;
+    top:5px;
+    cursor:pointer;
+}
+
+
+
+  /* ======================================= */
+  /* THE SECTION OF THE ADD CURRENCY LIST TO THE MAIN ITEMS */
+  ul.add-currency-list {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    right:50px;
+    background-color:#02B78B;
+    color: #ffffff;
+    width: 30%;
+    height: 510px;
+    overflow-y: auto;
+    margin:20px auto;
+    display:none;
+  }
+  
+
+  ul.add-currency-list::-webkit-scrollbar{
+    display:none;
+  }
+
+  ul.add-currency-list li {
+    list-style: none;
+    padding: 0.75rem;
+    background: #FCFDFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    width:90%;
+    margin:auto;
+    height:80px;
+    margin-bottom:15px;
+  }
+  ul.add-currency-list li.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  ul.add-currency-list li .flag {
+    width: 3rem;
+    height: 37px;
+    vertical-align: middle;
+    border:1px solid green;
+    margin-top:10px;
+  }
+  ul.add-currency-list li span {
+    margin-left: 1rem;
+    font-weight: bold;
+    color:#9BA2B0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom:15px;
+  }
+  ul.add-currency-list li p{
+    color:#828282;
+    margin-left:70px;
+    margin-top:-10px;
+    font-family: Montserrat;
+    font-size:12px;
+  }
+
+  .add-currency-btn.open + ul.add-currency-list li:hover {
+    background-color: blue;
+  }
+
+  .header-toggle{
+    position:relative;
+  }
+
+  .foot-head h2{
+    color:white;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 20px;
+    text-align:center;
+    letter-spacing:2px;
+    padding:30px;
+}
+.foot-head .fa-arrow-left{
+  position:absolute;
+  bottom:31px;
+  left:20px;
+  font-weight:normal;
+}
+
+.foot-header{
+  height:123px;
+  border-bottom-right-radius:50px;
+  border-bottom-left-radius:50px;
+  width:100%;
+}
+
+.footer{
+  background:#02B78B;
+  height:115px;
+  width:30%;
+  margin:20px auto;
+  position:fixed;
+  left:0;
+  right:0;
+  top:505px;
+  /* display:none; */
+  z-index:11111;
+
+}
+
+.footer h3{
+  font-family:Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 2px;
+  padding:50px 30px;
+color: #FFFFFF;
+}
+
+/* --------------------------- */
+
+
+/* ================================= */
+/* THE SECTION OF THE FOOTER */
+footer{
+    height:85px;
+    width:100%;
+    padding:15px 25px;
+    /* background:red; */
+}
+
+/* --------------------------- */
+footer button{
+    padding:15px;
+    background:#02B78B;
+    width:100%;
+    border-radius:25px;
+    color:#ffffff;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+
+
+
+/* ================================ */
+/* THE SECTION OF THE DARK MODE */
+.dark{
+  background:#243447;
+}
+
+
+
+
+
+
+/*  ====================================================*/
+/* THE SECTION OF THE MEDIA QUERY */
+/* ==================================================== */
+
+@media screen and (max-width:320px){
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#E5E5E5;
+}
+
+/* ========================== */
+/* THE SECTION OF THE CONTAINER */
+.container{
+    background: #ffffff;
+    width:100%;
+    height:410px;
+    margin:0px auto;
+}
+
+
+
+
+/* ================================ */
+/* THE SECTION OF THE SECTION */
+section{
+    background:#ffffff;
+    height:125px;
+}
+
+
+
+
+/* =============================== */
+/* THE SECTION OF THE HEADER */
+.header{
+    height:123px;
+    background:#02B78B;
+    border-bottom-right-radius:50px;
+    border-bottom-left-radius:50px;
+}
+
+/* ------------ */
+.header-toggle{
+    width:100%;
+    height:80px;
+}
+
+/* -------------- */
+.head{
+    width:90%;
+    float:left;
+    height:5px;
+}
+
+/* ---------------- */
+.head h2{
+    color:white;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 17px;
+    text-align:center;
+    letter-spacing:2px;
+    padding:30px 0px 20px 30px;
+    margin-right:0px;
+    font-weight:bold;
+}
+
+/* ----------------- */
+.toggle{
+    width:10%;
+    float:right;
+    height:50px;
+}
+
+/* ------------------- */
+.fa-toggle-off{
+    color:white;
+    font-size:16px;
+    float:left;
+    margin-top:34px;
+    font-weight:bold;
+}
+
+
+/* --------------------- */
+/* --------------------- */
+.time-date{
+    height:30px;
+    width:100%;
+}
+
+/* --------------------- */
+.date{
+    width:40%;
+    float:left;
+    padding:3px;
+    color:#ffffff;
+    margin-left:15px;
+    font-family:Montserrat;
+    font-style:Regular;
+    font-size:12px;
+}
+
+/* ----------------------- */
+.time{
+    width:40%;
+    float:right;
+    padding:3px;
+    color:#ffffff;
+    text-align:right;
+    margin-right:15px;
+    font-family:Montserrat;
+    font-style:Regular;
+    font-size:12px;
+}
+
+
+/* ================================= */
+/* THE SECTION OF THE MAIN */
+main{
+    background:#ffffff;
+    height:357px;
+    width:100%;
+    padding:20px;
+    overflow:auto;
+}
+
+main::-webkit-scrollbar{
+    display:none;
+}
+
+
+
+/* ------------------------- */
+
+  ul.currencies li {
+    width:100%;
+    height:125px;
+    background: rgb(245, 244, 244);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.02);
+    border-radius:8px;
+    margin-bottom:15px;
+    position:relative;
+    list-style:none;
+  }
+
+/* ------------------------ */
+  ul.currencies li.base-currency {
+    background-color:#02b78b54;
+  }
+
+/* ------------------------------ */
+  .left{
+    height:125px;
+    width:30%;
+    float:left;
+    padding:20px 10px;
+  }
+
+  .flag {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #fff;
+    margin-top:8px;
+
+  }
+
+  .info {
+    width: 70%;
+    float:right;
+    height:125px;
+    padding: 10px 5px;
+    position:relative;
+  }
+
+  .info .input span {
+    position:absolute;
+    top:44px;
+    left:-7px;
+    font-size:15px;
+    font-weight:bold;
+    color:#02B78B;
+  }
+
+  .info .input input {
+    font-size: 18px;
+    width: 100%;
+    background: rgb(236, 234, 234);
+    border-radius: 25px;
+    color:#02B78B;
+    padding: 10px;
+    margin-bottom:5px;
+    outline:none;
+    border:none;
+    margin-top:20px;
+  }
+  .input input::-webkit-input-placeholder{
+    color:#02B78B;
+    font-family:monospace;
+    font-size:16px;
+  }
+
+  .info .currency-name {
+    font-family:Montserrat;
+    font-style:normal;
+    font-weight:normal;
+    font-size:12px;
+    color: #828282;
+  }
+
+  .info .base-currency-rate {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #BDBDBD;
+    padding:7px 0;
+  }
+
+  .fa-times-circle{
+    font-weight: bold;
+    font-size: 12px;
+    color: #02B78B;
+    position:absolute;
+    right:9px;
+    top:7px;
+    cursor:pointer;
+}
+
+
+
+  /* ======================================= */
+  /* THE SECTION OF THE ADD CURRENCY LIST TO THE MAIN ITEMS */
+  ul.add-currency-list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right:0px;
+    background-color:#02B78B;
+    color: #ffffff;
+    width: 100%;
+    height: 510px;
+    overflow-y: auto;
+    margin:0px auto;
+    display:none;
+  }
+  
+
+  ul.add-currency-list::-webkit-scrollbar{
+    display:none;
+  }
+
+  ul.add-currency-list li {
+    list-style: none;
+    padding: 0.75rem;
+    background: #FCFDFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    width:90%;
+    margin:auto;
+    height:80px;
+    margin-bottom:15px;
+  }
+  ul.add-currency-list li.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  ul.add-currency-list li .flag {
+    width: 3rem;
+    height: 37px;
+    vertical-align: middle;
+    border:1px solid green;
+    margin-top:10px;
+  }
+  ul.add-currency-list li span {
+    margin-left: 1rem;
+    font-weight: bold;
+    color:#9BA2B0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom:15px;
+  }
+  ul.add-currency-list li p{
+    color:#828282;
+    margin-left:70px;
+    margin-top:-10px;
+    font-family: Montserrat;
+    font-size:11px;
+  }
+
+
+  .header-toggle{
+    position:relative;
+  }
+
+  .foot-head h2{
+    color:white;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 20px;
+    text-align:center;
+    letter-spacing:2px;
+    padding:30px;
+}
+.foot-head .fa-arrow-left{
+  position:absolute;
+  bottom:31px;
+  left:20px;
+  font-weight:normal;
+}
+
+.foot-header{
+  height:123px;
+  border-bottom-right-radius:50px;
+  border-bottom-left-radius:50px;
+  width:100%;
+}
+
+.footer{
+  background:#02B78B;
+  height:90px;
+  width:100%;
+  margin:20px auto;
+  position:fixed;
+  left:0;
+  right:0;
+  top:457px;
+  /* display:none; */
+  z-index:11111;
+
+}
+
+.footer h3{
+  font-family:Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 2px;
+  padding:20px 30px;
+color: #FFFFFF;
+}
+
+/* --------------------------- */
+
+
+/* ================================= */
+/* THE SECTION OF THE FOOTER */
+footer{
+    height:85px;
+    width:100%;
+    padding:15px 25px;
+    background:#ffffff;
+}
+
+/* --------------------------- */
+footer button{
+    padding:15px;
+    background:#02B78B;
+    width:100%;
+    border-radius:25px;
+    color:#ffffff;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+
+
+
+/* ================================ */
+/* THE SECTION OF THE DARK MODE */
+.dark{
+  background:#243447;
+}
+
+
+}
+
+
+
+
+
+
+/*  ====================================================*/
+/* THE SECTION OF THE MEDIA QUERY */
+/* ==================================================== */
+
+@media screen and (max-width:375px) and (min-width:321px){
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#E5E5E5;
+}
+
+/* ========================== */
+/* THE SECTION OF THE CONTAINER */
+.container{
+    background: #ffffff;
+    width:100%;
+    height:410px;
+    margin:0px auto;
+}
+
+
+
+
+/* ================================ */
+/* THE SECTION OF THE SECTION */
+section{
+    background:#ffffff;
+    height:125px;
+}
+
+
+
+
+/* =============================== */
+/* THE SECTION OF THE HEADER */
+.header{
+    height:123px;
+    background:#02B78B;
+    border-bottom-right-radius:50px;
+    border-bottom-left-radius:50px;
+}
+
+/* ------------ */
+.header-toggle{
+    width:100%;
+    height:80px;
+}
+
+/* -------------- */
+.head{
+    width:90%;
+    float:left;
+    height:5px;
+}
+
+/* ---------------- */
+.head h2{
+    color:white;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 17px;
+    text-align:center;
+    letter-spacing:2px;
+    padding:30px 0px 20px 30px;
+    margin-right:0px;
+    font-weight:bold;
+}
+
+/* ----------------- */
+.toggle{
+    width:10%;
+    float:right;
+    height:50px;
+}
+
+/* ------------------- */
+.fa-toggle-off{
+    color:white;
+    font-size:16px;
+    float:left;
+    margin-top:34px;
+    font-weight:bold;
+}
+
+
+/* --------------------- */
+/* --------------------- */
+.time-date{
+    height:30px;
+    width:100%;
+}
+
+/* --------------------- */
+.date{
+    width:40%;
+    float:left;
+    padding:3px;
+    color:#ffffff;
+    margin-left:15px;
+    font-family:Montserrat;
+    font-style:Regular;
+    font-size:12px;
+}
+
+/* ----------------------- */
+.time{
+    width:40%;
+    float:right;
+    padding:3px;
+    color:#ffffff;
+    text-align:right;
+    margin-right:15px;
+    font-family:Montserrat;
+    font-style:Regular;
+    font-size:12px;
+}
+
+
+/* ================================= */
+/* THE SECTION OF THE MAIN */
+main{
+    background:#ffffff;
+    height:457px;
+    width:100%;
+    padding:20px;
+    overflow:auto;
+}
+
+main::-webkit-scrollbar{
+    display:none;
+}
+
+
+
+/* ------------------------- */
+
+  ul.currencies li {
+    width:100%;
+    height:125px;
+    background: rgb(245, 244, 244);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.02);
+    border-radius:8px;
+    margin-bottom:15px;
+    position:relative;
+    list-style:none;
+  }
+
+/* ------------------------ */
+  ul.currencies li.base-currency {
+    background-color:#02b78b54;
+  }
+
+/* ------------------------------ */
+  .left{
+    height:125px;
+    width:30%;
+    float:left;
+    padding:20px 10px;
+  }
+
+  .flag {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #fff;
+    margin-top:8px;
+
+  }
+
+  .info {
+    width: 70%;
+    float:right;
+    height:125px;
+    padding: 10px 5px;
+    position:relative;
+  }
+
+  .info .input span {
+    position:absolute;
+    top:44px;
+    left:-7px;
+    font-size:15px;
+    font-weight:bold;
+    color:#02B78B;
+  }
+
+  .info .input input {
+    font-size: 18px;
+    width: 100%;
+    background: rgb(236, 234, 234);
+    border-radius: 25px;
+    color:#02B78B;
+    padding: 10px;
+    margin-bottom:5px;
+    outline:none;
+    border:none;
+    margin-top:20px;
+  }
+  .input input::-webkit-input-placeholder{
+    color:#02B78B;
+    font-family:monospace;
+    font-size:16px;
+  }
+
+  .info .currency-name {
+    font-family:Montserrat;
+    font-style:normal;
+    font-weight:normal;
+    font-size:12px;
+    color: #828282;
+  }
+
+  .info .base-currency-rate {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #BDBDBD;
+    padding:7px 0;
+  }
+
+  .fa-times-circle{
+    font-weight: bold;
+    font-size: 12px;
+    color: #02B78B;
+    position:absolute;
+    right:9px;
+    top:7px;
+    cursor:pointer;
+}
+
+
+
+  /* ======================================= */
+  /* THE SECTION OF THE ADD CURRENCY LIST TO THE MAIN ITEMS */
+  ul.add-currency-list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right:0px;
+    background-color:#02B78B;
+    color: #ffffff;
+    width: 100%;
+    height: 590px;
+    overflow-y: auto;
+    margin:0px auto;
+    display:none;
+  }
+  
+
+  ul.add-currency-list::-webkit-scrollbar{
+    display:none;
+  }
+
+  ul.add-currency-list li {
+    list-style: none;
+    padding: 0.75rem;
+    background: #FCFDFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    width:90%;
+    margin:auto;
+    height:80px;
+    margin-bottom:15px;
+  }
+  ul.add-currency-list li.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  ul.add-currency-list li .flag {
+    width: 3rem;
+    height: 37px;
+    vertical-align: middle;
+    border:1px solid green;
+    margin-top:10px;
+  }
+  ul.add-currency-list li span {
+    margin-left: 1rem;
+    font-weight: bold;
+    color:#9BA2B0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom:15px;
+  }
+  ul.add-currency-list li p{
+    color:#828282;
+    margin-left:70px;
+    margin-top:-10px;
+    font-family: Montserrat;
+    font-size:11px;
+  }
+
+
+  .header-toggle{
+    position:relative;
+  }
+
+  .foot-head h2{
+    color:white;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 20px;
+    text-align:center;
+    letter-spacing:2px;
+    padding:30px;
+}
+.foot-head .fa-arrow-left{
+  position:absolute;
+  bottom:31px;
+  left:20px;
+  font-weight:normal;
+}
+
+.foot-header{
+  height:123px;
+  border-bottom-right-radius:50px;
+  border-bottom-left-radius:50px;
+  width:100%;
+}
+
+.footer{
+  background:#02B78B;
+  height:90px;
+  width:100%;
+  margin:20px auto;
+  position:fixed;
+  left:0;
+  right:0;
+  top:557px;
+  /* display:none; */
+  z-index:11111;
+
+}
+
+.footer h3{
+  font-family:Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 2px;
+  padding:20px 30px;
+color: #FFFFFF;
+}
+
+/* --------------------------- */
+
+
+/* ================================= */
+/* THE SECTION OF THE FOOTER */
+footer{
+    height:85px;
+    width:100%;
+    padding:15px 25px;
+    background:#ffffff;
+}
+
+/* --------------------------- */
+footer button{
+    padding:15px;
+    background:#02B78B;
+    width:100%;
+    border-radius:25px;
+    color:#ffffff;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+
+
+
+/* ================================ */
+/* THE SECTION OF THE DARK MODE */
+.dark{
+  background:#243447;
+}
+
+
+}
+
+
+
+
+
+
+
+/*  ====================================================*/
+/* THE SECTION OF THE MEDIA QUERY */
+/* ==================================================== */
+
+@media screen and (max-width:425px) and (min-width:376px){
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#E5E5E5;
+}
+
+/* ========================== */
+/* THE SECTION OF THE CONTAINER */
+.container{
+    background: #ffffff;
+    width:100%;
+    height:410px;
+    margin:0px auto;
+}
+
+
+
+
+/* ================================ */
+/* THE SECTION OF THE SECTION */
+section{
+    background:#ffffff;
+    height:125px;
+}
+
+
+
+
+/* =============================== */
+/* THE SECTION OF THE HEADER */
+.header{
+    height:123px;
+    background:#02B78B;
+    border-bottom-right-radius:50px;
+    border-bottom-left-radius:50px;
+}
+
+/* ------------ */
+.header-toggle{
+    width:100%;
+    height:80px;
+}
+
+/* -------------- */
+.head{
+    width:90%;
+    float:left;
+    height:5px;
+}
+
+/* ---------------- */
+.head h2{
+    color:white;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 19px;
+    text-align:center;
+    letter-spacing:2px;
+    padding:30px 0px 20px 30px;
+    margin-right:0px;
+    font-weight:bold;
+}
+
+/* ----------------- */
+.toggle{
+    width:10%;
+    float:right;
+    height:50px;
+}
+
+/* ------------------- */
+.fa-toggle-off{
+    color:white;
+    font-size:17px;
+    float:left;
+    margin-top:34px;
+    font-weight:bold;
+}
+
+
+/* --------------------- */
+/* --------------------- */
+.time-date{
+    height:30px;
+    width:100%;
+}
+
+/* --------------------- */
+.date{
+    width:40%;
+    float:left;
+    padding:3px;
+    color:#ffffff;
+    margin-left:15px;
+    font-family:Montserrat;
+    font-style:Regular;
+    font-size:12px;
+}
+
+/* ----------------------- */
+.time{
+    width:40%;
+    float:right;
+    padding:3px;
+    color:#ffffff;
+    text-align:right;
+    margin-right:15px;
+    font-family:Montserrat;
+    font-style:Regular;
+    font-size:12px;
+}
+
+
+/* ================================= */
+/* THE SECTION OF THE MAIN */
+main{
+    background:#ffffff;
+    height:525px;
+    width:100%;
+    padding:20px;
+    overflow:auto;
+}
+
+main::-webkit-scrollbar{
+    display:none;
+}
+
+
+
+/* ------------------------- */
+
+  ul.currencies li {
+    width:100%;
+    height:125px;
+    background: rgb(245, 244, 244);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.02);
+    border-radius:8px;
+    margin-bottom:15px;
+    position:relative;
+    list-style:none;
+  }
+
+/* ------------------------ */
+  ul.currencies li.base-currency {
+    background-color:#02b78b54;
+  }
+
+/* ------------------------------ */
+  .left{
+    height:125px;
+    width:30%;
+    float:left;
+    padding:20px 10px;
+  }
+
+  .flag {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #fff;
+    margin-top:8px;
+
+  }
+
+  .info {
+    width: 70%;
+    float:right;
+    height:125px;
+    padding: 10px 5px;
+    position:relative;
+  }
+
+  .info .input span {
+    position:absolute;
+    top:44px;
+    left:-7px;
+    font-size:15px;
+    font-weight:bold;
+    color:#02B78B;
+  }
+
+  .info .input input {
+    font-size: 18px;
+    width: 100%;
+    background: rgb(236, 234, 234);
+    border-radius: 25px;
+    color:#02B78B;
+    padding: 10px;
+    margin-bottom:5px;
+    outline:none;
+    border:none;
+    margin-top:20px;
+  }
+  .input input::-webkit-input-placeholder{
+    color:#02B78B;
+    font-family:monospace;
+    font-size:16px;
+  }
+
+  .info .currency-name {
+    font-family:Montserrat;
+    font-style:normal;
+    font-weight:normal;
+    font-size:12px;
+    color: #828282;
+  }
+
+  .info .base-currency-rate {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #BDBDBD;
+    padding:7px 0;
+  }
+
+  .fa-times-circle{
+    font-weight: bold;
+    font-size: 12px;
+    color: #02B78B;
+    position:absolute;
+    right:9px;
+    top:7px;
+    cursor:pointer;
+}
+
+
+
+  /* ======================================= */
+  /* THE SECTION OF THE ADD CURRENCY LIST TO THE MAIN ITEMS */
+  ul.add-currency-list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right:0px;
+    background-color:#02B78B;
+    color: #ffffff;
+    width: 100%;
+    height: 650px;
+    overflow-y: auto;
+    margin:0px auto;
+    display:none;
+  }
+  
+
+  ul.add-currency-list::-webkit-scrollbar{
+    display:none;
+  }
+
+  ul.add-currency-list li {
+    list-style: none;
+    padding: 0.75rem;
+    background: #FCFDFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    width:90%;
+    margin:auto;
+    height:80px;
+    margin-bottom:15px;
+  }
+  ul.add-currency-list li.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  ul.add-currency-list li .flag {
+    width: 3rem;
+    height: 37px;
+    vertical-align: middle;
+    border:1px solid green;
+    margin-top:10px;
+  }
+  ul.add-currency-list li span {
+    margin-left: 1rem;
+    font-weight: bold;
+    color:#9BA2B0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom:15px;
+  }
+  ul.add-currency-list li p{
+    color:#828282;
+    margin-left:70px;
+    margin-top:-10px;
+    font-family: Montserrat;
+    font-size:11px;
+  }
+
+
+  .header-toggle{
+    position:relative;
+  }
+
+  .foot-head h2{
+    color:white;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 20px;
+    text-align:center;
+    letter-spacing:2px;
+    padding:30px;
+}
+.foot-head .fa-arrow-left{
+  position:absolute;
+  bottom:31px;
+  left:20px;
+  font-weight:normal;
+}
+
+.foot-header{
+  height:123px;
+  border-bottom-right-radius:50px;
+  border-bottom-left-radius:50px;
+  width:100%;
+}
+
+.footer{
+  background:#02B78B;
+  height:90px;
+  width:100%;
+  margin:20px auto;
+  position:fixed;
+  left:0;
+  right:0;
+  top:627px;
+  /* display:none; */
+  z-index:11111;
+
+}
+
+.footer h3{
+  font-family:Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 2px;
+  padding:25px 30px;
+color: #FFFFFF;
+}
+
+/* --------------------------- */
+
+
+/* ================================= */
+/* THE SECTION OF THE FOOTER */
+footer{
+    height:85px;
+    width:100%;
+    padding:15px 25px;
+    background:#ffffff;
+}
+
+/* --------------------------- */
+footer button{
+    padding:15px;
+    background:#02B78B;
+    width:100%;
+    border-radius:25px;
+    color:#ffffff;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+
+
+
+/* ================================ */
+/* THE SECTION OF THE DARK MODE */
+.dark{
+  background:#243447;
+}
+
+
+}
